@@ -15,14 +15,12 @@ app.set('views', './views')
 app.set('view engine', 'ejs')
 
 app.get('', (req, res) => {
-    res.render('index', {text: 'This is EJS'})
+    res.render('index')
 })
 
-app.get('/about', (req, res) => {
-    res.render('about', {text: 'About Page'})
+app.get('', (req, res) => {
+    res.render('home')
 })
-
-
 
 
 //Listen on port 3000
